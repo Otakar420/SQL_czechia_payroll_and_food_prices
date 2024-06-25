@@ -1,16 +1,16 @@
-# SQL projekt
+# SQL project
 
-Tento projekt se zaměřuje na posouzení **dostupnosti základních potravin pro širokou veřejnost** prostřednictvím analýzy příslušných datových sad. Cílem je odpovědět na definované **výzkumné otázky**, které se týkají porovnání dostupnosti potravin na základě **průměrných příjmů** za specifická **časová období**.
+This project aims to assess the **availability of staple foods to the general public** by analysing relevant datasets. The aim is to answer defined **research questions** that relate to the comparison of food availability based on **average income** for specific **time periods**.
 
--   **Průměrná mzda v odvětvích:** Data pro období **2000-2021**.
--   **Ceny kategorií potravin:** Data pro období **2006-2018**.
+- **Average earnings in sectors:** Data for the period **2000-2021**.
+- **Food category prices:** Data for the period **2006-2018**.
 
-Jako dodatečný materiál jsem také připravil tabulku s údaji o **HDP, GINI koeficientu** a **populaci dalších evropských států** ve stejném období jako primární data pro Českou republiku.
+As additional material, I have also prepared a table with data on **GDP, GINI coefficient** and **population of other European countries** for the same period as the primary data for the Czech Republic.
 
-## Výzkumné otázky
+## Research questions
 
-1.  Rostou v průběhu let mzdy ve všech odvětvích, nebo v některých klesají?
-2.  Kolik je možné si koupit litrů mléka a kilogramů chleba za první a poslední srovnatelné období v dostupných datech cen a mezd?
-3.  Která kategorie potravin zdražuje nejpomaleji (je u ní nejnižší percentuální meziroční nárůst)?
-4.  Existuje rok, ve kterém byl meziroční nárůst cen potravin výrazně vyšší než růst mezd (větší než 10 %)?
-5.  Má výška HDP vliv na změny ve mzdách a cenách potravin? Neboli, pokud HDP vzroste výrazněji v jednom roce, projeví se to na cenách potravin či mzdách ve stejném nebo násdujícím roce výraznějším růstem?
+1. Have wages been rising over the years in all sectors, or have they been falling in some sectors?
+2. How many litres of milk and kilograms of bread can be bought in the first and last comparable periods in the available price and wage data?
+3. Which food category is becoming more expensive at the slowest rate (has the lowest annual percentage increase)?
+4. Is there a year in which the annual increase in food prices was significantly higher than the increase in wages (greater than 10%)?
+5.  Does the level of GDP affect changes in wages and food prices? Or, if GDP rises more significantly in one year, does this translate into a more significant rise in food prices or wages in the same or subsequent year?
