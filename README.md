@@ -4,9 +4,10 @@ This project aims to assess the **availability of staple foods to the general pu
 
 - **Average wage in sectors:** Data for the period **2000-2021**.
 - **Food category prices:** Data for the period **2006-2018**.
-- **GDP:** Data for the period **2000-2021**.
 
 As additional material, I have also prepared a table with data on **GDP, GINI coefficient** and **population of other European countries** for the same period as the primary data for the Czech Republic.
+
+- **GDP:** Data for the period **2000-2021**.
 
 ## Research questions
 

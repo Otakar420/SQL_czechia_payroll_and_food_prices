@@ -19,9 +19,9 @@ gdp_data AS(
 	SELECT 
 		country,
 		`year`,
-		GDP_in_billion,
+		GDP_in_bilion,
 		gini,
-		population_in_million
+		population_in_milion
 	FROM t_petr_bela_project_SQL_secondary_final
 	WHERE 
 		country = 'Czech Republic'
@@ -31,9 +31,9 @@ combined_data AS (
 		pfd.year,
 		pfd.average_payroll,
 		pfd.average_food_price,
-		gd.GDP_in_billion,
+		gd.GDP_in_bilion,
 		gd.gini,
-		gd.population_in_million
+		gd.population_in_milion
 	FROM payroll_food_data AS pfd
 	LEFT JOIN
 		gdp_data AS gd ON pfd.YEAR = gd.YEAR
@@ -47,24 +47,24 @@ percent_changes AS(
 		LAG(average_payroll) OVER (ORDER BY year) AS prev_average_payroll,
 		average_food_price,
 		LAG(average_food_price) OVER (ORDER BY year) AS prev_average_food_price,
-		GDP_in_billion,
-		LAG(GDP_in_billion) OVER (ORDER BY year) AS prev_GDP_in_billion,
+		GDP_in_bilion,
+		LAG(GDP_in_bilion) OVER (ORDER BY year) AS prev_GDP_in_billion,
 		gini,
-		population_in_million,
+		population_in_milion,
 		(average_payroll - LAG(average_payroll) OVER (ORDER BY year)) / LAG(average_payroll) OVER (ORDER BY year) * 100 AS percent_change_payroll,
 		(average_food_price - LAG(average_food_price) OVER (ORDER BY year)) / LAG(average_food_price) OVER (ORDER BY year) * 100 AS percent_change_food_price,
-		(GDP_in_billion - LAG(GDP_in_billion) OVER (ORDER BY year)) / LAG(GDP_in_billion) OVER (ORDER BY year) * 100 AS percent_change_GDP
+		(GDP_in_bilion - LAG(GDP_in_bilion) OVER (ORDER BY year)) / LAG(GDP_in_bilion) OVER (ORDER BY year) * 100 AS percent_change_GDP
 	FROM combined_data
 )
 SELECT 
 	year,
 	average_payroll,
 	average_food_price,
-	GDP_in_billion,
+	GDP_in_bilion,
 	ROUND(percent_change_payroll, 2) AS percent_change_payroll,
 	ROUND(percent_change_food_price, 2) AS percent_change_food_price,
 	ROUND(percent_change_GDP, 2) AS percent_change_GDP,
 	gini,
-	population_in_million
+	population_in_milion
 FROM percent_changes
 ORDER BY year;

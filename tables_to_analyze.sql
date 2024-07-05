@@ -70,9 +70,9 @@ CREATE OR REPLACE TABLE t_petr_bela_project_SQL_secondary_final AS
 SELECT 
 	e.country,
 	e.`year`,
-	FORMAT(e.GDP / 1e9, 2) AS GDP_in_billion,
+	FORMAT(e.GDP / 1e9, 2) AS GDP_in_bilion,
 	e.gini,
-	FORMAT(e.population / 1e6, 2) AS population_in_million
+	FORMAT(e.population / 1e6, 2) AS population_in_milion
 FROM economies AS e
 LEFT JOIN
 	countries AS c ON c.country = e.country 
