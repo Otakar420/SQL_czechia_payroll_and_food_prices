@@ -2,8 +2,9 @@
 
 This project aims to assess the **availability of staple foods to the general public** by analysing relevant datasets. The aim is to answer defined **research questions** that relate to the comparison of food availability based on **average income** for specific **time periods**.
 
-- **Average earnings in sectors:** Data for the period **2000-2021**.
+- **Average wage in sectors:** Data for the period **2000-2021**.
 - **Food category prices:** Data for the period **2006-2018**.
+- **GDP:** Data for the period **2006-2018**.
 
 As additional material, I have also prepared a table with data on **GDP, GINI coefficient** and **population of other European countries** for the same period as the primary data for the Czech Republic.
 

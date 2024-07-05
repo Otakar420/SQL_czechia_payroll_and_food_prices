@@ -62,3 +62,25 @@ CREATE INDEX idx_date_from ON czechia_price (date_from);
 CREATE INDEX idx_value ON czechia_price (value);
 
 SHOW INDEXES FROM czechia_price;
+
+/*
+ * 2. GDP, GINI coefficient and population of other European countries / t_petr_bela_project_SQL_secondary_final
+ */
+CREATE OR REPLACE TABLE t_petr_bela_project_SQL_secondary_final AS
+SELECT 
+	e.country,
+	e.`year`,
+	FORMAT(e.GDP / 1e9, 2) AS GDP_in_billion,
+	e.gini,
+	FORMAT(e.population / 1e6, 2) AS population_in_million
+FROM economies AS e
+LEFT JOIN
+	countries AS c ON c.country = e.country 
+WHERE 
+	c.continent = 'Europe' -- other European countries
+	AND e.`year` BETWEEN '2000' AND '2021' -- period covering both wages and food prices for czechia
+ORDER BY 
+	e.country,
+	e.`year`;
+
+SELECT * FROM t_petr_bela_project_SQL_secondary_final;
