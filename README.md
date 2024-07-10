@@ -16,3 +16,11 @@ As additional material, I have also prepared a table with data on **GDP, GINI co
 3. Which food category is becoming more expensive at the slowest rate (has the lowest annual percentage increase)?
 4. Is there a year in which the annual increase in food prices was significantly higher than the increase in wages (greater than 10%)?
 5.  Does the level of GDP affect changes in wages and food prices? Or, if GDP rises more significantly in one year, does this translate into a more significant rise in food prices or wages in the same or subsequent year?
+
+### Results
+
+The results of the research questions are available in the following documents:
+
+English Version: [research_questions_EN.pdf](https://github.com/Otakar420/SQL_czechia_payroll_and_food_prices/blob/main/research_questions_EN.pdf)
+
+Czech Version: [vyzkumne_otazky_CZ.pdf](https://github.com/Otakar420/SQL_czechia_payroll_and_food_prices/blob/main/vyzkumne_otazky_CZ.pdf)
